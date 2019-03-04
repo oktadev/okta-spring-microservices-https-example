@@ -1,8 +1,8 @@
-# Spring Microservices and Docker
+# Spring Microservices with HTTPS and OAuth 2.0
 
-This example shows how to create a microservices architecture with Spring Boot and Spring Cloud. It also shows how to package each application in Docker containers and run them with Docker Compose.
+This example shows how to create a microservices architecture and secure communication between them using HTTPS and OAuth 2.0. 
 
-Please read [Build Spring Microservices and Dockerize them for Production](https://developer.okta.com/blog/2019/02/28/spring-microservices-docker) for a tutorial that shows you how to build this application.
+<!-- Please read [Build Spring Microservices and Dockerize them for Production](https://developer.okta.com/blog/2019/02/28/spring-microservices-docker) for a tutorial that shows you how to build this application. -->
 
 **Prerequisites:** [Java 8 or 11](https://adoptopenjdk.net/).
 
@@ -18,8 +18,8 @@ Please read [Build Spring Microservices and Dockerize them for Production](https
 To install this example application, run the following commands:
 
 ```bash
-git clone https://github.com/oktadeveloper/okta-spring-microservices-docker-example.git
-cd okta-spring-microservices-docker-example
+git clone https://github.com/oktadeveloper/okta-spring-microservices-https-example.git
+cd okta-spring-microservices-https-example
 ```
 
 ### Create an Okta Developer Account
@@ -28,7 +28,9 @@ If you don't have one, [create an Okta Developer account](https://developer.okta
 
 Copy your issuer (found under **API** > **Authorization Servers**), client ID, and client secret into `config-data/school-ui.properties`.
 
-Create another Web application and name it something like "Spring Docker Production". Copy the client ID and secret into `config-data/school-ui-production.properties`. 
+Create a second Web application and name it something like "Spring Docker Production". Copy the client ID and secret into `config-data/school-ui-production.properties`. 
+
+Create a third Web application and name it something like "Spring Server to Server". Copy the client ID and secret into `config-data/school-service.properties`. 
 
 Run the following command from the root folder to create Docker containers for all your apps.
 
@@ -57,7 +59,7 @@ This example uses the following open source projects:
 
 ## Help
 
-Please post any questions as comments on this repo's [blog post](https://developer.okta.com/blog/2019/02/28/spring-microservices-docker), or visit our [Okta Developer Forums](https://devforum.okta.com/). 
+Please post any questions as comments on this repo's [blog post](), or visit our [Okta Developer Forums](https://devforum.okta.com/). 
 
 ## License
 
