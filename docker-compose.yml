@@ -1,14 +1,10 @@
 version: '3'
 services:
   discovery:
-    env_file:
-      - .env
     image: developer.okta.com/microservice-docker-discovery:0.0.1-SNAPSHOT
     ports:
       - 8761:8761
   config:
-    env_file:
-      - .env
     image: developer.okta.com/microservice-docker-config:0.0.1-SNAPSHOT
     volumes:
       - ./config-data:/var/config-data
@@ -21,8 +17,6 @@ services:
     ports:
       - 8888:8888
   school-service:
-    env_file:
-      - .env
     image: developer.okta.com/microservice-docker-school-service:0.0.1-SNAPSHOT
     environment:
       - JAVA_OPTS=
@@ -33,8 +27,6 @@ services:
     ports:
       - 8081:8081
   school-ui:
-    env_file:
-      - .env
     image: developer.okta.com/microservice-docker-school-ui:0.0.1-SNAPSHOT
     environment:
       - JAVA_OPTS=
