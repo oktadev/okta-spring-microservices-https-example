@@ -1,5 +1,6 @@
 *.idea
 *.iml
+*.env
 
 # Created by https://www.gitignore.io/api/java,maven,eclipse,netbeans,intellij
 # Edit at https://www.gitignore.io/?templates=java,maven,eclipse,netbeans,intellij

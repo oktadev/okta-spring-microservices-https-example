@@ -27,6 +27,7 @@ services:
     environment:
       - JAVA_OPTS=
         -DEUREKA_SERVER=https://discovery:8761/eureka
+    restart: on-failure
     depends_on:
       - discovery
       - config
