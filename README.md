@@ -2,7 +2,7 @@
 
 This example shows how to create a microservices architecture and secure communication between them using HTTPS and OAuth 2.0. 
 
-<!-- Please read [Build Spring Microservices and Dockerize them for Production](https://developer.okta.com/blog/2019/02/28/spring-microservices-docker) for a tutorial that shows you how to build this application. -->
+Please read [Secure Service-to-Service Spring Microservices with HTTPS and OAuth 2.0](https://developer.okta.com/blog/2019/03/07/spring-microservices-https-oauth2) for a tutorial that shows you how to build this application. 
 
 **Prerequisites:** [Java 8 or 11](https://adoptopenjdk.net/).
 
@@ -59,7 +59,7 @@ This example uses the following open source projects:
 
 ## Help
 
-Please post any questions as comments on this repo's [blog post](), or visit our [Okta Developer Forums](https://devforum.okta.com/). 
+Please post any questions as comments on this repo's [blog post](https://developer.okta.com/blog/2019/03/07/spring-microservices-https-oauth2), or visit our [Okta Developer Forums](https://devforum.okta.com/). 
 
 ## License
 
