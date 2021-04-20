@@ -40,14 +40,15 @@ public class SchoolController {
 
     @GetMapping("/classes")
     @PreAuthorize("hasAuthority('SCOPE_profile')")
-    public ResponseEntity<List<TeachingClassDto>> listClasses(@AuthenticationPrincipal OAuth2AuthenticationToken authentication) { // <2>
+    public ResponseEntity<List<TeachingClassDto>> listClasses(
+        @AuthenticationPrincipal OAuth2AuthenticationToken authentication) { // <2>
 
         OAuth2AuthorizedClient authorizedClient =
             this.authorizedClientService.loadAuthorizedClient(
                 authentication.getAuthorizedClientRegistrationId(),
                 authentication.getName()); // <3>
 
-        OAuth2AccessToken accessToken = authorizedClient.getAccessToken();// <4>
+        OAuth2AccessToken accessToken = authorizedClient.getAccessToken(); // <4>
         HttpHeaders headers = new HttpHeaders() {{
             set("Authorization", "Bearer " + accessToken.getTokenValue()); // <5>
         }};
